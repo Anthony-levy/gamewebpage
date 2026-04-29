@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- link to the css page for the bird game-->
+    <link rel="stylesheet" href="css/bird.css">
+    <title>Bird</title>
+</head>
+
+<body>
+
+<h1>Welcome to the Flappy Bird Game</h1>
+<!-- Navigation Bar -->
+<div class="tab">
+  <button onclick="goToPage('index.html')">About</button>
+  <button onclick="goToPage('snake.html')">Snake</button>
+  <button onclick="goToPage('bird.html')">Flappy Bird</button>
+</div>
+
+<div class="dashboard">
+
+  <!-- LEFT PANEL -->
+  <div class="panel left">
+    <section class="inst">
+      <h2>Instructions</h2>
+      <p>Press SPACE or TAP to flap and avoid pipes.</p>
+    </section>
+
+    <section class="tips">
+      <h3>Tips</h3>
+      <ul>
+        <li>Tap lightly for control</li>
+        <li>Stay centered</li>
+        <li>Don’t rush pipes</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- CENTER PANEL GAME -->
+  <div class="panel center">
+    <div class="game-box">
+
+      <div id="gameContainer"></div>
+
+      <div id="overlay" class="overlay">
+        <div id="overlayText"></div>
+        <br>
+        <button onclick="restartGame()">Restart</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel right">
+
+    <div class="score-board">
+      <p>Score: <span id="score">0</span></p>
+      <p>High Score: <span id="highScore">0</span></p>
+    </div>
+
+  </div>
+
+</div>
+<!-- link to the javascript page for the bird game-->
+<script src="js/bird.js"></script>
+
+</body>
+</html>

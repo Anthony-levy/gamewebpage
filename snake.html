@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- link to the css for the snake -->
+<link rel="stylesheet" href="css/snake.css">
+
+<title>
+Snake
+</title>
+</head>
+<body>
+
+<h1>Welcome to the Snake Game</h1>
+<!-- Navigation bar -->
+<div class="tab">
+  <button onclick="goToPage('index.html')">About</button>
+  <button onclick="goToPage('snake.html')">Snake</button>
+  <button onclick="goToPage('bird.html')">Flappy Bird</button>
+</div>
+
+<div class="dashboard">
+
+  <!-- LEFT PANEL -->
+  <div class="panel left">
+    <section class="inst">
+      <h2>Instructions</h2>
+      <p>Use Arrow Keys to move. Eat food to grow. Don’t hit walls or yourself.</p>
+    </section>
+
+    <section class="tips">
+      <h3>Tips</h3>
+      <ul>
+        <li>Stay near the center early</li>
+        <li>Avoid tight turns</li>
+        <li>Think ahead</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- CENTER PANEL (GAME) -->
+  <div class="panel center">
+    <div class="game-box">
+      <div id="gameContainer"></div>
+
+      <div id="overlay" class="overlay">
+        <div id="overlayText"></div>
+        <br>
+        <button onclick="restartGame()">Restart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="panel right">
+    
+    <div class="score-board">
+      <p>Score: <span id="score">0</span></p>
+      <p>High Score: <span id="highScore">0</span></p>
+    </div>
+
+    <div class="controls">
+      <button onclick="moveUp()">UP</button>
+      <div>
+        <button onclick="moveLeft()">LEFT</button>
+        <button onclick="moveDown()">DOWN</button>
+        <button onclick="moveRight()">RIGHT</button>
+      </div>
+    </div>
+
+ 
+
+  </div>
+
+</div>
+<!-- link to the javascript page for the snake game  -->
+<script src="js/snake.js"></script>
+</body>
+</html>

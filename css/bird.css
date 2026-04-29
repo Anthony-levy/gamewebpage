@@ -1,0 +1,150 @@
+/* BASE PAGE */
+body {
+    margin: 0;
+    background-color: lightyellow;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* NAV */
+.tab {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    flex: 1;
+}
+
+.tab button:hover {
+    background-color: #FFB6C1;
+}
+
+/* INSTRUCTIONS */
+.inst {
+    background-color: #f0f0f0;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.inst h2 {
+    margin-bottom: 15px;
+}
+
+.inst p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* DASHBOARD */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 140px);
+}
+
+/* PANELS */
+.panel {
+    background: #ffffffcc;
+    border-radius: 15px;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+/* CENTER */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GAME BOX */
+.game-box {
+    position: relative;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    height: 400px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/*  CANVAS  */
+canvas {
+    border: 1px solid #d3d3d3;
+    background-color: #70c5ce;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    display: none;
+    border-radius: 10px;
+}
+
+#overlay button {
+    background: linear-gradient(145deg, #4CAF50, #2E7D32);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px #1b5e20;
+    transition: all 0.2s ease;
+}
+
+#overlay button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px #1b5e20;
+}
+
+#overlay button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px #1b5e20;
+}
+
+/* SCORE BOARD */
+.score-board {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
